@@ -1,20 +1,25 @@
 import React from "react";
 
-function Card() {
+const monthsNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Set", "Oct", "Nov", "Dec"];
+
+function Card(props) {
+    const date = new Date(props.data.year);
+    const dateYear = date.getFullYear();
+    const dateMonth = monthsNames[date.getMonth()];
     return <div className="Card">
         <div className="card-body">
             <h4 className="card-title">
-                Meteorite Name
+                {props.data.name}
             </h4>
             <p className="card-recclass">
-                Ureilite-pmict class
+                {props.data.recclass}
             </p>
             <p className="card-mass">
-                60.34 grams
+                {props.data.mass} grams
             </p>
             <div className="card-floor">
-                <p className="card-fall">Fell</p>
-                <p className="card-year">Dec, 2021</p>
+                <p className="card-fall">{props.data.fall}</p>
+                <p className="card-year">{dateMonth}, {dateYear}</p>
             </div>
         </div>
     </div>
