@@ -12,3 +12,15 @@
   margin: 0 auto;
   width: 416px;
 }
+
+.Card {
+  width: 245px;
+  height: 200px;
+  border: 0.3px solid;
+}
+
+.Card .card-floor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
