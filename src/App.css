@@ -1,6 +1,7 @@
 .Header {
   text-align: center;
   margin-top: 125px;
+  margin-bottom: 120px;
 }
 
 .title {
@@ -13,10 +14,24 @@
   width: 416px;
 }
 
+.cards-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .Card {
   width: 245px;
-  height: 200px;
   border: 0.3px solid;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.Card .card-body {
+  margin: 0px 10px;
 }
 
 .Card .card-floor {
