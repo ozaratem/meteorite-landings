@@ -17,7 +17,7 @@ function Card(props) {
             <p className="card-mass">
                 {props.data.mass} grams
             </p>
-            <div className="card-floor">
+            <div className="card-footer">
                 <p className="card-fall">{props.data.fall}</p>
                 <p className="card-year">{dateMonth}, {dateYear}</p>
             </div>

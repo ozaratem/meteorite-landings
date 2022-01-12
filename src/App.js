@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Card from "./components/Card";
 import meteoriteData from "./data/Meteorite_Landings_dataset.json";
+import Map from "./components/Map";
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <Map/>
       <div className="cards-container">
         {
           cardsData.map(element => {
