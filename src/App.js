@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Map/>
+      <Map data={cardsData} />
       <div className="cards-container">
         {
           cardsData.map(element => {
