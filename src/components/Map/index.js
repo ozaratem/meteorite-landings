@@ -14,7 +14,7 @@ function Map(props) {
 	const min = props.minMax[0];
 	const max = props.minMax[1];
 
-	const scale = scalePow().exponent(0.2).domain([min, max]).range([5, 100]);
+	const scale = scalePow().exponent(-0.05).domain([min, max]).range([10, 50]);
 	
 	return <div id="map">
     <MapContainer center={[16, 0]} zoom={2} scrollWheelZoom={false}>
@@ -30,7 +30,7 @@ function Map(props) {
 						radius={scale(element.mass)}
 						color={getColor(element.fall)}
 						weight={1}
-						fillOpacity={0.5}
+						fillOpacity={0.2}
 					> 
             <Popup>
               <h3>{element.name}</h3>

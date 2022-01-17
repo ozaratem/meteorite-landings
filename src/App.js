@@ -9,12 +9,15 @@ const minMass = min(meteoriteData, function(node){return +node.mass});
 const maxMass = max(meteoriteData, function(node){return +node.mass});
 
 function App() {
-  const cardsData = meteoriteData.splice(0, 100);
-	const mapData = meteoriteData.splice(0, 1000);
+	const sortedData = meteoriteData.sort(function (a, b){
+		return parseInt(b.mass) - parseInt(a.mass);
+	});
+  const cardsData = sortedData.slice(0, 100);
+	const mapData = sortedData.slice(0, 300);
   return (
     <div className="App">
       <Header/>
-      <Map data={mapData} minMax={[minMass, maxMass]} />
+      <Map data={mapData} minMax={[mapData[mapData.length-1].mass, maxMass]} />
       <div className="cards-container">
         {
           cardsData.map(element => {
