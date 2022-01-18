@@ -3,10 +3,9 @@ import Card from "./components/Card";
 import meteoriteData from "./data/Meteorite_Landings_dataset.json";
 import Map from "./components/Map";
 import './App.css';
-import {min, max} from "d3-array";
-import {useState} from "react";
+import { max } from "d3-array";
+import { useState } from "react";
 
-const minMass = min(meteoriteData, function(node){return +node.mass});
 const maxMass = max(meteoriteData, function(node){return +node.mass});
 const sortedData = meteoriteData.sort(function (a, b){
   return parseInt(b.mass) - parseInt(a.mass);
