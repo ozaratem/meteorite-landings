@@ -3,10 +3,11 @@ import Card from "./components/Card";
 import meteoriteData from "./data/Meteorite_Landings_dataset.json";
 import Map from "./components/Map";
 import './App.css';
-import { max } from "d3-array";
+import { min, max } from "d3-array";
 import { useState } from "react";
 
 const maxMass = max(meteoriteData, function(node){return +node.mass});
+const minMass = min(meteoriteData, function(node){return +node.mass});
 const sortedData = meteoriteData.sort(function (a, b){
   return parseInt(b.mass) - parseInt(a.mass);
 });
@@ -40,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Map data={mapData} minMax={[mapData[mapData.length-1].mass, maxMass]} />
+      <Map data={mapData} minMax={[minMass, maxMass]} />
       <div className="controls">
         <button onClick={handleClickBack}>Back</button>
         <button onClick={handleClickNext}>Next</button>

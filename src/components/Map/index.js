@@ -14,7 +14,7 @@ function Map(props) {
 	const min = props.minMax[0];
 	const max = props.minMax[1];
 
-	const scale = scalePow().exponent(-0.05).domain([min, max]).range([10, 50]);
+	const scale = scalePow().exponent(0.5).domain([min, max]).range([10, 50]);
 	
 	return <div id="map">
     <MapContainer center={[16, 0]} zoom={2} scrollWheelZoom={false}>
