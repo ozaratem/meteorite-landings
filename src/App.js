@@ -42,8 +42,11 @@ function App() {
       <Header/>
       <Map data={mapData} minMax={[mapData[mapData.length-1].mass, maxMass]} />
       <div className="controls">
-        <div onClick={handleClickBack}>Back</div>
-        <div onClick={handleClickNext}>Next</div>
+        <button onClick={handleClickBack}>Back</button>
+        <button onClick={handleClickNext}>Next</button>
+      </div>
+      <div className="cardLegend">
+        <p>Showing 100 recorsd ordered by descending mass (g)</p>
       </div>
       <div className="cards-container">
         {
