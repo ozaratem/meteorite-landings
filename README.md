@@ -2,6 +2,8 @@
 
 ![Meteorite Landings Map](./src/assets/map.jpg)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/890bd3aa-b7b7-49ef-8a9b-18db275f8dd1/deploy-status)](https://app.netlify.com/sites/oz-meteorite-landings/deploys)
+
 ### Welcome to Meteorite Landings
 
 The application is a tool that allows you to visualize on a map, data on the known landings of meteorites exported from a dataset of The Meteoritical Society.
