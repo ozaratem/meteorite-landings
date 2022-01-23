@@ -32,36 +32,36 @@
   height: 500px;
 }
 
-.mapLegend {
+.map-legend {
   margin: 0 0 100px 0;
   display: flex;
   justify-content: flex-end;
 }
 
-.mapLegend .mapSubLegend {
+.map-legend .map-sub-legend {
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 
-.mapLegend .mapSubLegend p {
+.map-legend .map-sub-legend p {
   padding: 0 10px;
 }
 
-.circleMass {
+.circle-mass {
   height: 25px;
   width: 25px;
   border: 3px solid #c4c4c4;
   border-radius: 50%;
 }
 
-.squareFell {
+.square-fell {
   height: 25px;
   width: 25px;
   background-color: #fc8d62;
 }
 
-.squareFound {
+.square-found {
   height: 25px;
   width: 25px;
   background-color: #8da0cb;
@@ -81,7 +81,7 @@
   color: #2f4858;
 }
 
-.cardLegend {
+.card-legend {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -121,7 +121,7 @@
   .cards-container {
     justify-content: center;
   }
-  .cardLegend {
+  .card-legend {
     margin: 30px 15px;
   }
 }

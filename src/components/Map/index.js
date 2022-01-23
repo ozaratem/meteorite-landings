@@ -40,15 +40,15 @@ function Map(props) {
         })
       }
     </MapContainer>
-	<div className="mapLegend">
-		<div className="mapSubLegend">
-			<div className="circleMass"></div> <p>Mass (grams)</p>
+	<div className="map-legend">
+		<div className="map-sub-legend">
+			<div className="circle-mass"></div> <p>Mass (grams)</p>
 		</div>
-		<div className="mapSubLegend">
-			<div className="squareFell"></div> <p>Fell</p>
+		<div className="map-sub-legend">
+			<div className="square-fell"></div> <p>Fell</p>
 		</div>
-		<div className="mapSubLegend">
-			<div className="squareFound"></div> <p>Found</p>
+		<div className="map-sub-legend">
+			<div className="square-found"></div> <p>Found</p>
 		</div>
 	</div>
 	</div>

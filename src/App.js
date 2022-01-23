@@ -46,7 +46,7 @@ function App() {
         <button onClick={handleClickBack}>Back</button>
         <button onClick={handleClickNext}>Next</button>
       </div>
-      <div className="cardLegend">
+      <div className="card-legend">
         <p>Showing 100 recorsd ordered by descending mass (g)</p>
       </div>
       <div className="cards-container">
