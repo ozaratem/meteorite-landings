@@ -16,6 +16,13 @@
   font-size: 22px;
 }
 
+@media screen and (max-width: 600px) {
+  .Header p {
+    width: auto;
+    margin: 0 15px 0 15px;
+  }
+}
+
 #map {
   max-width: 1440px;
   margin: 0 auto;
@@ -108,4 +115,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .cards-container {
+    justify-content: center;
+  }
+  .cardLegend {
+    margin: 30px 15px;
+  }
 }
